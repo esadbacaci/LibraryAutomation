@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75E125FB-5E13-40D8-B65A-214DE26289C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>bin\Debug\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitabialanlarbilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitabialanlarbilgisi.Designer.cs">
+      <DependentUpon>kitabialanlarbilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapislem.Designer.cs">
+      <DependentUpon>kitapislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencialdigikitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencialdigikitaplar.Designer.cs">
+      <DependentUpon>ogrencialdigikitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrislem.Designer.cs">
+      <DependentUpon>ogrislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrliste.Designer.cs">
+      <DependentUpon>ogrliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="zedgraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zedgraph.Designer.cs">
+      <DependentUpon>zedgraph.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitabialanlarbilgisi.resx">
+      <DependentUpon>kitabialanlarbilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapislem.resx">
+      <DependentUpon>kitapislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencialdigikitaplar.resx">
+      <DependentUpon>ogrencialdigikitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrislem.resx">
+      <DependentUpon>ogrislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrliste.resx">
+      <DependentUpon>ogrliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zedgraph.resx">
+      <DependentUpon>zedgraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kütüphane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_male2_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_registration_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booklist_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{febe10b7-7050-477d-94da-ec3ea77225a2}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{1b26afa8-80fb-4e1e-a2fd-36aa222630bf}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ktphane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ktphane1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\read_online_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

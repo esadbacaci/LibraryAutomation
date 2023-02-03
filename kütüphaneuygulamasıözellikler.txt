@@ -1,0 +1,18 @@
+Kütüphane programımda olan özellikler
+-	Katmanlı Mimari tabanlı
+-	Öğrenci kayıt ekleme, güncelleme ve silme
+-	Kitap ekleme, silme, güncelleme penceresi
+-	Öğrencinin bir kitabı alma durumunu gösteren pencere. Bu pencerede mevcut öğrenci için kitap alımı ve iade işlemleri yapılabilir
+-	Öğrencinin şimdiye kadar almış olduğu teslim etmiş ve teslim etmemiş olduğu kitaplar listesi 
+-	Öğrencinin teslim süresini aştığı kitap için öğrenciye ait kitap listesinde kırmızı olarak uyarı 
+-	Teslim süresine 2 gün kalan kitaplar için uyarı amaçlı sarı renk ile bilgilendirme 
+-	Teslim edilmiş kitap listesinde her bir kitap yeşil renkte.
+-	Kitap alma ve iade işlemleri tarihsel düzeyde gerçekleştirilebiliyor.
+-	Her bir kitap için ayrı bir formda ilgili kitap takibi yapılabilecek. Yani kitabın kodu veya adı verildiğinde kitap ile ilgili katalog bilgileri (yazar, basım tarihi, ilgili türü, sayfa sayısı gibi) yer alıyor. (Kitap işlemleri penceresinde kitabı seçtiğinizde tüm bilgileri görebiliyoruz)
+-	Kitap ile ilgili bilgilerin olduğu formda o kitabı teslim almış ve teslim etmiş olan kişilerin tüm listesi yer alıyor. Hangi tarihlerde alınıp hangi tarihlerde teslim edildiği bilgileride bulunuyor.
+-	Cezai uygulama için
+-	Kitabın geç teslim durumuna göre günlük 1 Tl’lik ceza değeri öğrenci üzerine borç olarak yazılacak ve gösteriliyor.
+-	Kütüphanede bulunan tüm kitapların, öğrenciye verilmiş olan ve kütüphanede verilmeye hazır olan kitapların sayısını grafik olarak gösteriliyor.
+-	Uygulamanın diğer bilgisayarlara kurulumu için setup dosyası var ve kişi bu uygulamayı istediği bilgisayar kurup o şekilde kullanabilir.
+
+-	(Setup dosyası ayrıca uygulamanın kodlarının olduğu yerdede bulunuyor)
