@@ -1,2 +1,3 @@
 # KutuphaneOtomasyonu
-C# Form ile yapılan kütüphane otomasyonu
+C# Wİndows Form ile yapılan kütüphane otomasyonu
+(Access veri tabanı kullanılmıştır)
